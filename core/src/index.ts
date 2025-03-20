@@ -1,3 +1,3 @@
-const x = "deu certo"
-
-export { x }
+export * from "./projects"
+export * from "./shared"
+export * from "./technology"
