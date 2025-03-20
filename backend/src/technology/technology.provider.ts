@@ -1,0 +1,12 @@
+import { Injectable } from '@nestjs/common';
+import { PrismaProvider } from '../db/prisma.provider';
+import { Technology } from '../../../core/src';
+
+@Injectable()
+export class TechnologyProvider {
+  constructor(private readonly prisma: PrismaProvider) {}
+
+  async getAll(): Promise<Technology[]> {
+    return this.prisma.technology.findMany();
+  }
+}
