@@ -1,4 +1,4 @@
-export enum type {
+export enum Type {
 	JOGO = "jogo",
 	WEB = "web",
 	MOBILE = "mobile",
