@@ -1,3 +1,3 @@
 import Id from "./Id"
 
-export type { Id }
+export { Id }
