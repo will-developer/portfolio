@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { ProjectPrisma } from './project.prisma';
 import { ProjectController } from './project.controller';
 import { DbModule } from '../db/db.module';
+import { ProjectPrisma } from './project.prisma';
 
 @Module({
   imports: [DbModule],
