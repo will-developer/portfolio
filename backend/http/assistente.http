@@ -1,0 +1,7 @@
+POST https://will-developer.app.n8n.cloud/webhook/assistente
+Content-Type: application/json
+
+{
+  "chatId": "1234567",
+  "mensagem": "Quais tecnologias você conhece?"
+}
