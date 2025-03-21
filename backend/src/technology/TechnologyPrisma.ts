@@ -3,7 +3,7 @@ import { PrismaProvider } from '../db/prisma.provider';
 import { Technology } from '../../../core/src';
 
 @Injectable()
-export class TechnologyProvider {
+export class TechnologyPrisma {
   constructor(private readonly prisma: PrismaProvider) {}
 
   async getAll(): Promise<Technology[]> {

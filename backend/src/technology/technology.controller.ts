@@ -1,10 +1,10 @@
 import { Controller, Get } from '@nestjs/common';
-import { TechnologyProvider } from './technology.provider';
+import { TechnologyPrisma } from './TechnologyPrisma';
 import { Technology } from '@core';
 
 @Controller('technology')
 export class TechnologyController {
-  constructor(private readonly repository: TechnologyProvider) {}
+  constructor(private readonly repository: TechnologyPrisma) {}
 
   @Get()
   async getAll(): Promise<Technology[]> {
