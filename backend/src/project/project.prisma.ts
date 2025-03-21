@@ -10,7 +10,7 @@ export class ProjectPrisma {
     return this.prisma.project.findMany() as any;
   }
 
-  async getById(id: number): Promise<Projects[] | null> {
+  async getById(id: number): Promise<Projects | null> {
     return this.prisma.project.findUnique({
       where: { id },
       include: { technology: true },
